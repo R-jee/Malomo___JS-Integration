@@ -16,7 +16,7 @@
       var temp_email_against_ord_no = $("#malomo_email").val();
       var temp_trackingNo_against_ord_no = $("#malomo_tracking").val();
 
-      var malomo = Malomo('pk_d3da22a60804bb50e47e8291190b8946');
+      var malomo = Malomo('*******************************');
       if (temp_ord_no != "" && temp_email_against_ord_no != "") {
         malomo.retrieveOrder({
           number: temp_ord_no,
