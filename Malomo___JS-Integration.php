@@ -50,5 +50,23 @@
         );
       }
     });
+    
+    /////////////////////////////////////////////////
+    
+    var url = "https://api.gomalomo.com/orders/?number=791991&customer_email=trw823@hotmail.com";
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.setRequestHeader("Authorization", "Bearer pk_d3da22a60804bb50e47e8291190b8946");
+    xhr.setRequestHeader("Accept", "application/vnd.malomo+json; version=2");
+    xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+        console.log(xhr.status);
+        console.log(xhr.responseText);
+    }};
+    xhr.send();
+    
+    
+    
   </script>
   <!--   //   Malomo  API Integration For order tracking   -->
