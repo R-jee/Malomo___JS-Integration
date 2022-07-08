@@ -4,6 +4,24 @@
 ?>
 <!--   //   Malomo  API Integration For order tracking   -->
   <script>
+    
+    var settings = {
+        async: true,
+        crossDomain: true,
+        url: "https://api.gomalomo.com/orders/?tracking_code=9400111298370668271278",
+        method: "GET",
+        headers: {
+            "content-type": "json",
+            Authorization: "Bearer pk_d3da22a60804bb50e47e8291190b8946",
+            Accept: "application/vnd.malomo+json; version=2",
+        },
+        data: {
+            username: "user@company.com",
+            password: "12345678",
+        },
+    };
+    
+    
     var script = document.createElement('script');
     script.src = "https://js.gomalomo.com/v2/";
     document.head.appendChild(script);
