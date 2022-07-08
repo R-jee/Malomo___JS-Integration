@@ -68,5 +68,17 @@
     
     
     
+    ///////////////////////////////////////////////////////////////////////////////////////////
+    
+    var malomo = Malomo('pk_d3da22a60804bb50e47e8291190b8946');
+    var elements = malomo.elements();
+    malomo.retrieveOrder({ id: '02ce816f-fc5a-4e46-9fda-1f0ba8d6f23a' })
+      .then(
+        function(response) {
+          console.log(response);
+        }
+      );
+    
+    
   </script>
   <!--   //   Malomo  API Integration For order tracking   -->
